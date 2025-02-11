@@ -2,6 +2,7 @@ import com.android.tools.r8.internal.kt
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import java.util.Properties
+
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
@@ -27,8 +28,6 @@ kotlin {
             isStatic = true
         }
     }
-
-    jvm()
 
     sourceSets {
         commonMain.dependencies {
